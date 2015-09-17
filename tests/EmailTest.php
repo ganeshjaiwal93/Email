@@ -17,7 +17,7 @@ class EmailTest extends \PHPUnit_Framework_TestCase {
 	 *@test
 	 */
 	public function it_can_validate_emailId_address_according_to_gmail_standards_sample_two() {
-		$emailId = new Email();
+		$email = new Email();
 		$result  = $emailId->validate("shantanu3687patwardhan@yahoo.co.in");
 		$this->assertEquals($result, true);
 	}
@@ -104,3 +104,4 @@ class EmailTest extends \PHPUnit_Framework_TestCase {
 		$email->validate("shantanu3687.@gmail.com");
 	}
 }
+
